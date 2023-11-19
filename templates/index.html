@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+
+        button {
+           
+            margin-top: 10px; /* Add some top margin for spacing */
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+    <h1 class="Hi">Levels Of Causes Of Cancer Form</h1>
+    <form action="/predict" method="post">
+        <!-- {% for column in columns %} -->
+            <label for="{{ column }}">Column Numbers :-</label>
+            <input type="number" name="{{ column }}" id="{{ column }}" step="1" required>
+            <br>
+        <!-- {% endfor %} -->
+        <button type="submit" >Predict</button>
+    </form>
+    
+    <!-- Note for valid input range -->
+    <p style="color: red;" class="error">Input must be whole numbers between 1 to 9.</p>
+</body>
+</html>

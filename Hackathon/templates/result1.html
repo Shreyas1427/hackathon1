@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+               margin: 0; /* Remove default margin */
+               font-family: Arial, sans-serif; /* Add a fallback font */
+               background-color: #f2f2f2; /* Set a light background color */
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 100vh; /* Make sure the body covers the entire viewport height */
+           }
+   
+           .box {
+               background-color: #ffffff; /* Set the background color of the box */
+               padding: 20px; /* Add some padding inside the box */
+               border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+               box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+           }
+   
+           h1, p {
+               text-align: center; /* Center the heading and paragraph */
+           }
+   </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="result1.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Result</h1>
+        <p>Predicted Cancer Level: {{ prediction }}</p>
+    </div>
+</body>
+</html>
